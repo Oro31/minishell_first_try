@@ -39,7 +39,6 @@ int	ft_open_dblr(int *in, int (*fd)[2], char *file, t_heredoc *heredoc)
 		return (1);
 	}
 	ft_print_list_heredoc(heredoc, (*fd)[0]);
-//	ft_free_list_heredoc(heredoc);
 	*in = 1;
 	return (0);
 }
