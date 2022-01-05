@@ -6,7 +6,7 @@
 /*   By: rvalton <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 12:33:23 by rvalton           #+#    #+#             */
-/*   Updated: 2022/01/05 15:21:34 by rvalton          ###   ########.fr       */
+/*   Updated: 2022/01/05 20:36:06 by rvalton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ void	ft_exec_builtin(t_env **env, t_cmd **cmd)
 	int		oldfd;
 	int		fd[2];
 
+	g_exit_status = 0;
 	oldfd = dup(STDOUT_FILENO);
 	if (ft_get_fd(&fd, cmd))
 		return ;
