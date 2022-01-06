@@ -83,7 +83,6 @@ int	ft_prompt(t_env **env)
 	cmd = NULL;
 	line = NULL;
 	signal(SIGQUIT, SIG_IGN);
-	signal(SIGPIPE, SIG_IGN);
 	signal(SIGINT, ft_main_handler);
 	line = readline("$>");
 	if (ft_is_eof(env, &cmd, &line))
