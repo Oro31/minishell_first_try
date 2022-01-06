@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Wextra -Werror -g3
+CFLAGS = -Wall -Wextra -Werror
 
 CC = clang
 
@@ -72,11 +72,6 @@ SRC_UTI =	ft_atoi.c\
 SRC = $(addprefix $(DIR_BUI), $(SRC_BUI)) $(addprefix $(DIR_EXE), $(SRC_EXE)) $(addprefix $(DIR_LIS), $(SRC_LIS)) $(addprefix $(DIR_PAR), $(SRC_PAR)) $(addprefix $(DIR_PRO), $(SRC_PRO)) $(addprefix $(DIR_UTI), $(SRC_UTI))
 
 OBJ = $(SRC:.c=.o) $(SRC_MAI:.c=.o)
-  # 	$(SRC_EXE:.c=.o) $(SRC_LIS:.c=.o) $(SRC_PAR:.c=.o) $(SRC_PRO:.c=.o) $(SRC_UTI:.c=.o) $(SRC_MAI:.c=.o)
-
-#SRC = $(wildcard *.c)
-
-#OBJ = $(SRC:%.c=%.o)
 
 all: $(NAME)
 
