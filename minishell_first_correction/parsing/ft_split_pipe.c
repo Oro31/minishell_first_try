@@ -6,7 +6,7 @@
 /*   By: rvalton <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/04 09:15:23 by rvalton           #+#    #+#             */
-/*   Updated: 2022/01/06 00:19:06 by rvalton          ###   ########.fr       */
+/*   Updated: 2022/01/08 12:28:03 by rvalton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,7 @@ static int	ft_is_space_needed(char *rdline, int i)
 		return (0);
 	else if (rdline[i - 1] == ' ' || rdline[i - 1] == '|')
 		return (0);
-	else if (rdline[i + 1] == '\0' || rdline[i + 1] == '|'
-		|| rdline[i + 1] == ' ')
+	else if (rdline[i + 1] == '\0' || rdline[i + 1] == '|')
 		return (0);
 	else
 		return (1);

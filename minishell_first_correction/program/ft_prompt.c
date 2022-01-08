@@ -6,7 +6,7 @@
 /*   By: rvalton <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 12:33:23 by rvalton           #+#    #+#             */
-/*   Updated: 2022/01/07 12:13:08 by rvalton          ###   ########.fr       */
+/*   Updated: 2022/01/08 12:25:27 by rvalton          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ static void	ft_parse_readline(t_env *env, t_cmd **cmd, char **line)
 	pipe_char = NULL;
 	heredoc = NULL;
 	pipe_char = ft_pipe_split(line);
+	printf("str=%s\n", pipe_char[0]);
 	pipe_char = ft_set_redir(pipe_char);
 	i = -1;
 	while (pipe_char && pipe_char[++i])
